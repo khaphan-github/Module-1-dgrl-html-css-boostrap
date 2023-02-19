@@ -48,8 +48,14 @@ const jumbToServeyIndex = (currentPopupIndex, destinationPopupIndex) => {
     handlePopup(currentPupubId, 'hide');
     handlePopup(destinationPopubId, 'show');
 }
-  
-handleCheckRatio();
+ 
+const openSuccessNotification = () => {
+    handlePopup('notification-popup', 'show');
+    handlePopup('servey-popup-part-17', 'hide');
+}
+const onCloseSuccessNotification = () => {
+    handlePopup('notification-popup', 'hide');
+}
 const handlcheckBoxClick = () => {
 
 }

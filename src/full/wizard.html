@@ -35,6 +35,7 @@
 
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="wizard.css">
+	<link rel="stylesheet" href="notifipopub.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -42,17 +43,17 @@
 
 </head>
 
-<body class="smart-style-6">
+<body class="">
 	<header id="header">
 		<div id="logo-group">
-			<span id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </span>
+			<p id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </p>
 		</div>
 		<div class="pull-right">
 
 			<!-- collapse menu button -->
 			<div id="hide-menu" class="btn-header pull-right">
-				<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i
-							class="fa fa-reorder"></i></a> </span>
+				<p> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i
+							class="fa fa-reorder"></i></a> </p>
 			</div>
 			<!-- end collapse menu -->
 
@@ -99,34 +100,102 @@
 
 	<aside id="left-panel">
 		<div class="login-info">
-			<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
-				<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+			<p> <!-- User image size is adjusted inside CSS, it should stay as it -->
+				<a href="#" id="show-shortcut" data-action="toggleShortcut">
 					<img src="img/avatars/sunny.png" alt="me" class="online" />
 					<i class="fa fa-angle-down"></i>
 				</a>
-			</span>
+			</p>
 		</div>
 		<nav>
 			<ul>
 				<li>
-					<a href="wizard.html"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span
-							class="menu-item-parent">Đánh giá rèn luyện</span></a>
+					<a href="wizard.html"><i class="fa fa-lg fa-fw fa-list-alt"></i>
+						<p class="menu-item-parent">Đánh giá rèn luyện</p>
+					</a>
 				</li>
 			</ul>
 		</nav>
-		<span class="minifyme" data-action="minifyMenu">
+		<p class="minifyme" data-action="minifyMenu">
 			<i class="fa fa-arrow-circle-left hit"></i>
-		</span>
+		</p>
 
 	</aside>
 
-
+		
 	<!-- MAIN ELEMENT -->
 	<div id="main" role="main">
-		<div class="servey-information">
-			<button class="btn btn-primary" onclick="handlePopup('servey-popup-part-1', 'show');">
-				Đánh giá rèn luyện</button>
+		<!-- Notification Popup -->
+		<div class="center-pupub " id="notification-popup">
+			<div class="d-flex flex-center">
+				<div class="d-flex flex-column notifi-popup">
+					<div class="success-text">
+						<h1 class="d-flex justify-content-center success-text">Success!</h1>
+					</div>
+					<div class="d-flex justify-content-center success-icon">
+						<img class="icon" src="https://cdn-icons-png.flaticon.com/128/1292/1292906.png" alt="icon">
+					</div>
+					<div class="content">
+						<p class="d-flex justify-content-center" style="margin-bottom: 0px">
+							Chúc mừng bạn đã chấm điểm thành công
+						</p>
+						<p class="d-flex justify-content-center">
+							Học kỳ II năm học 2023
+						</p>
+						<h4 class="d-flex justify-content-center">Điểm của bạn&nbsp <strong>85/100</strong></h4>
+
+					</div>
+
+					<div class="d-flex justify-content-center confirm-btn">
+						<button class="custom-button" onclick="handlePopup('notification-popup', 'hide')">XEM KẾT
+							QUẢ</button>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<div class="flex-center ">
+			<div class="servey-information">
+				<div class="d-flex flex-row justify-content-between content" id="servey-information">
+					<div class="student-info">
+						<h2>1. Thông tin sinh viên</h2>
+						<h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
+						<h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
+						<h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
+						<h5><strong>Số điện thoại: </strong>0329199948</h5>
+						<h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
+						<h5><strong>Khoa:</strong> Khoa công nghệ thông tin</h5>
+					</div>
+					<div class="student-info">
+						<h2>2. Mốc thời gian</h2>
+						<h5><strong>03/01/2023 - 29/01/2023:</strong> Sinh viên tự chấm điểm</h5>
+						<h5><strong>20/01/2023 - 15/02/2023:</strong> Ban cán sự chấm điểm</h5>
+						<h5><strong>17/02/2023 - 13/03/2023:</strong> Khoa chấm điểm</h5>
+						<h5><strong>01/04/2023:</strong> Công bố điểm tổng</h5>
+					</div>
+					<div class="student-info">
+						<h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
+						<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
+						<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
+						<h5><strong>Điểm:</strong> 0/100</h5>
+						<button class=" btn btn-lg btn-primary" style="margin-top:10px"
+							onclick="handlePopup('servey-popup-part-1', 'show');">
+							Đánh giá rèn luyện ngay</button>
+					</div>
+					<div class="student-info">
+						<h2>4. Lịch sử đánh giá rèn luyện</h2>
+						<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
+						<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
+						<h5><strong>Điểm:</strong> 0/100</h5>
+						<button class="btn btn-lg btn-primary" style="margin-top:10px"
+							onclick="location.href='https://sinhvien.hutech.edu.vn/#/sinhvien/ren-luyen-sinh-vien/phieu-danh-gia-list';">
+							Xem lịch sử đánh giá rèn luyện</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
 		<!-- Other component -->
 
 
@@ -144,33 +213,31 @@
 						<h4>Đánh giá về ý thức tham gia học tập, đi học chuyển cần và đúng giờ (6đ):</h4>
 					</div>
 					<div class="option-custom">
-						<div class="option">
-
-							<span class="option-name">
+						<div class="option" onclick="handleCheckboxClick()">
+							<p class="option-name">
 								Tôi đi học đầy đủ và không đi trễ
-							</span>
-
+							</p>
 							<!-- <div class="tick">
 								<img class="tick-icon" src="./img/whitte-tick.png" alt="tick-icon">
 							</div> -->
 
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi học đầy đủ và có đi trễ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi đi học không đầy đủ
-							</span>
+							</p>
 						</div>
 
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 1</span>
+							<p class="page-index">Trang 1</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
@@ -196,46 +263,50 @@
 						<h3>1. Đánh giá về ý thức tham gia học tập:</h3>
 						<h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ
 						</h5>
-						<h4>Các hoạt động bạn đã tham gia (6đ):</h4>
+						<h4>Các hoạt động bạn đã tham gia (6đ) được chọn nhiều: </h4>
 					</div>
 					<div class="option-custom">
 						<div class="option require-proof">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi là thành viên, thường xuyên tham gia sinh hoạt các CLB học thuật cấp Khoa/ Viện
 								trở lên (Yêu cầu minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi có tham gia ít nhất 01 cuộc thi học thuật cấp Khoa/ Viện trở lên
-							</span>
+								(Yêu cầu minh chứng)
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi có tham gia ít nhất 01 buổi hội thảo liên quan đến hoạt động khởi nghiệp hoặc chương
 								trình tọa đàm, hội thảo khoa học, hội thảo kỹ năng mềm.
-							</span>
+								(Yêu cầu minh chứng)
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi có đề tài tham gia nghiên cứu khoa học cấp Khoa/ Viện trở lên hoặc có bài viết
 								nghiên
 								cứu khoa học được đăng trên website, báo, tạp chí liên quan
-							</span>
+								(Yêu cầu minh chứng)
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được khen thưởng trong học kỳ
 								hoặc
 								đạt các giải thưởng về nghiên cứu khoa học, cuộc thi học thuật
-							</span>
+								(Yêu cầu minh chứng)
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 2</span>
+							<p class="page-index">Trang 2</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('2', '1')">Quay
@@ -266,25 +337,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Cập nhật đầy đủ thông tin địa chỉ ngoại trú
-							</span>
+							</p>
 						</div>
 						<div class="d-flex justify-content-between option">
-							<span class="option-name">
+							<p class="option-name">
 								Xác nhận không thay đổi thông tin địa chỉ ngoại trú so với học kỳ trước
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Không thực hiện
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 3</span>
+							<p class="page-index">Trang 3</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('3', '2')">Quay
@@ -317,25 +388,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chưa chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Không chấp hành
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 4</span>
+							<p class="page-index">Trang 4</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('4', '3')">Quay
@@ -367,25 +438,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chưa chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Không chấp hành
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 5</span>
+							<p class="page-index">Trang 5</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('5', '4')">Quay
@@ -416,25 +487,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Chưa chấp hành đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Không chấp hành
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 6</span>
+							<p class="page-index">Trang 6</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('6', '5')">Quay
@@ -466,41 +537,41 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 1
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 2
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 3
-							</span>
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 4
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 5
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ sung minh chứng 6
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 7</span>
+							<p class="page-index">Trang 7</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('7', '6')">Quay
@@ -533,42 +604,42 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.1. Tham gia hoạt động ngoại khóa hoặc hỗ trợ, cổ vũ cho các hoạt động văn hóa, văn
 								nghệ, thể dục, thể thao do Lớp, Khoa/ Viện hoặc Nhà trường tổ chức (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.2. Tham gia sinh hoạt chi Đoàn hoặc các buổi báo cáo chuyên đề về tình hình thời sự,
 								chính trị, xã hội, hội nhập đất nước do Khoa/ Viện, Trường tổ chức (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.3. Tham gia Hội thao hoặc chương trình văn nghệ do Khoa/Viện, Nhà trường tổ chức (có
 								minh chứng)
-							</span>
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.4. Tham gia đóng góp hoặc hỗ trợ hoạt động tình nguyện do Lớp, Khoa/ Viện, Trường tổ
 								chức như thăm mái ấm, nhà mở, trung tâm khuyết tật, nuôi dưỡng người già,…(có minh
 								chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.5. Tham gia đầy đủ và hoàn thành bài thu hoạch các buổi sinh hoạt công dân đầu khóa
 								(đối với năm nhất) hoặc tham gia đầy đủ các buổi sinh hoạt của Lớp
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 8</span>
+							<p class="page-index">Trang 8</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('8', '7')">Quay
@@ -600,40 +671,40 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các tệ nạn
 								trong trường học và ngoài xã hội (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn hóa, văn
 								nghệ, thể thao (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện, Nhà
 								trường tổ chức (có minh chứng)
-							</span>
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do Ban
-								chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</span>
+								chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc thi về
 								văn hóa, văn nghệ, thể thao (có minh chứng)
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 9</span>
+							<p class="page-index">Trang 9</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4" onclick="jumbToServeyIndex('9', '8')">Quay
@@ -665,40 +736,40 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các tệ nạn
 								trong trường học và ngoài xã hội (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn hóa, văn
 								nghệ, thể thao (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện, Nhà
 								trường tổ chức (có minh chứng)
-							</span>
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do Ban
-								chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</span>
+								chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc thi về
 								văn hóa, văn nghệ, thể thao (có minh chứng)
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 10</span>
+							<p class="page-index">Trang 10</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -732,25 +803,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 1
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 2
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 3
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 11</span>
+							<p class="page-index">Trang 11</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -783,36 +854,36 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.1. Có mối quan hệ vui vẻ và hòa đồng với nhân dân địa phương nơi cư trú
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.2. Hoàn thành tốt mọi nghĩa vụ công dân theo đúng quy định của pháp luật, thể hiện
 								được phẩm chất của một công dân gương mẫu
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.3. Không bị cơ quan an ninh hoặc cơ quan Nhà nước có thẩm quyền gửi thông báo vi phạm
 								công tác giữ gìn an ninh trật tự, an toàn xã hội, an toàn giao thông tại địa phương về
 								Trường
-							</span>
+							</p>
 						</div>
 
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.4. Sinh viên hòa đồng, nhiệt tình, giúp đỡ bạn bè trong Lớp, Khoa, Trường cùng tiến
 								bộ. Không chia rẽ bè phái, gây bất hòa, xích mích trong nội bộ, làm ảnh hưởng đến tinh
 								thần đoàn kết của tập thể
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 12</span>
+							<p class="page-index">Trang 12</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -844,25 +915,25 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 1
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 2
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Bổ xung minh chứng hoạt động 3
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 13</span>
+							<p class="page-index">Trang 13</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -894,27 +965,27 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tham gia hiến máu nhân đạo hoặc là thành viên ban tổ chức, ban điều hành các đội hình
 								sinh viên tình nguyện từ cấp Trường trở lên (có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.7. Được tuyên dương, khen thưởng khi tham gia các hoạt động cộng đồng tại địa phương
 								(có minh chứng)
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								4.8. Đạt danh hiệu Sinh viên 5 tốt cấp Khoa/ Viện trở lên (có minh chứng)
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 14</span>
+							<p class="page-index">Trang 14</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -949,36 +1020,36 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Có kế hoạch tổ chức các hoạt động, phong trào của lớp trong học kỳ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Triển khai đầy đủ thông tin hoạt động của Khoa/ Viện, Trường đến sinh viên
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tham gia đầy đủ các buổi họp và tập huấn cán bộ lớp trong học kỳ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tổ chức ít nhất 2 hoạt động ngoại khóa dành cho sinh viên Lớp
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Vận động tập thể lớp đăng ký tham gia “Lớp học tiên tiến” hoặc vận động được 10% sinh
 								viên trong lớp đăng ký “Sinh viên 5 tốt”
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 15</span>
+							<p class="page-index">Trang 15</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -1012,30 +1083,30 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tham gia đầy đủ và tích cực
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tham gia đầy đủ nhưng chưa tích cực
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tham gia không đầy đủ
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Không tham gia
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 16</span>
+							<p class="page-index">Trang 16</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -1069,32 +1140,32 @@
 					</div>
 					<div class="option-custom">
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi là nhân tố tích cực, chủ động tổ chức hoạt động, phong trào Lớp
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi là thành viên của Lớp được công nhận đạt danh hiệu “Lớp học tiên tiến”
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được giới thiệu tham gia học lớp
 								cảm
 								tình Đảng hoặc xét kết nạp Đảng
-							</span>
+							</p>
 						</div>
 						<div class="option">
-							<span class="option-name">
+							<p class="option-name">
 								Tôi không tham gia
-							</span>
+							</p>
 						</div>
 					</div>
 
 					<div class="d-flex justify-content-between navigate">
 						<div class="d-flex align-items-center page">
-							<span class="page-index">Trang 17</span>
+							<p class="page-index">Trang 17</p>
 						</div>
 						<div class="navigate-btn">
 							<button class="btn btn-lg btn-secondary border-4"
@@ -1102,7 +1173,7 @@
 								lại</button>
 
 							<button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-								onclick="jumbToServeyIndex('17', '1')">
+								onclick="openSuccessNotification()">
 								Hoàn Thành
 							</button>
 						</div>
@@ -1110,10 +1181,69 @@
 				</div>
 			</div>
 		</div>
+		<!-- END MAIN ELEMENT -->
+
 
 
 	</div>
-	<!-- END MAIN ELEMENT -->
+
+	<!-- PAGE FOOTER -->
+	<div class="page-footer">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<span class="txt-color-white">SmartAdmin 1.9.0 <span class="hidden-xs"> - Web Application
+						Framework</span> © 2017-2019</span>
+			</div>
+
+			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
+				<div class="txt-color-white inline-block">
+					<i class="txt-color-blueLight hidden-mobile">Last account activity <i class="fa fa-clock-o"></i>
+						<strong>52 mins ago &nbsp;</strong> </i>
+					<div class="btn-group dropup">
+						<button class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white" data-toggle="dropdown">
+							<i class="fa fa-link"></i> <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right text-left">
+							<li>
+								<div class="padding-5">
+									<p class="txt-color-darken font-sm no-margin">Download Progress</p>
+									<div class="progress progress-micro no-margin">
+										<div class="progress-bar progress-bar-success" style="width: 50%;"></div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="padding-5">
+									<p class="txt-color-darken font-sm no-margin">Server Load</p>
+									<div class="progress progress-micro no-margin">
+										<div class="progress-bar progress-bar-success" style="width: 20%;"></div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="padding-5">
+									<p class="txt-color-darken font-sm no-margin">Memory Load <span
+											class="text-danger">*critical*</span></p>
+									<div class="progress progress-micro no-margin">
+										<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="padding-5">
+									<button class="btn btn-block btn-default">refresh</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PAGE FOOTER -->
 
 
 	<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
@@ -1180,7 +1310,6 @@
 		<![endif]-->
 
 	<!-- Demo purpose only -->
-	<script src="js/demo.min.js"></script>
 
 	<!-- MAIN APP JS FILE -->
 	<script src="js/app.min.js"></script>
@@ -1196,134 +1325,6 @@
 	<!-- PAGE RELATED PLUGIN(S) -->
 	<script src="js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 	<script src="js/plugin/fuelux/wizard/wizard.min.js"></script>
-
-
-	<script>
-
-		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-
-		$(document).ready(function () {
-
-			pageSetUp();
-
-
-
-			//Bootstrap Wizard Validations
-
-			var $validator = $("#wizard-1").validate({
-
-				rules: {
-					email: {
-						required: true,
-						email: "Your email address must be in the format of name@domain.com"
-					},
-					fname: {
-						required: true
-					},
-					lname: {
-						required: true
-					},
-					country: {
-						required: true
-					},
-					city: {
-						required: true
-					},
-					postal: {
-						required: true,
-						minlength: 4
-					},
-					wphone: {
-						required: true,
-						minlength: 10
-					},
-					hphone: {
-						required: true,
-						minlength: 10
-					}
-				},
-
-				messages: {
-					fname: "Please specify your First name",
-					lname: "Please specify your Last name",
-					email: {
-						required: "We need your email address to contact you",
-						email: "Your email address must be in the format of name@domain.com"
-					}
-				},
-
-				highlight: function (element) {
-					$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-				},
-				unhighlight: function (element) {
-					$(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-				},
-				errorElement: 'span',
-				errorClass: 'help-block',
-				errorPlacement: function (error, element) {
-					if (element.parent('.input-group').length) {
-						error.insertAfter(element.parent());
-					} else {
-						error.insertAfter(element);
-					}
-				}
-			});
-
-			$('#bootstrap-wizard-1').bootstrapWizard({
-				'tabClass': 'form-wizard',
-				'onNext': function (tab, navigation, index) {
-					var $valid = $("#wizard-1").valid();
-					if (!$valid) {
-						$validator.focusInvalid();
-						return false;
-					} else {
-						$('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).addClass(
-							'complete');
-						$('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).find('.step')
-							.html('<i class="fa fa-check"></i>');
-					}
-				}
-			});
-
-
-			// fuelux wizard
-			var wizard = $('.wizard').wizard();
-
-			wizard.on('finished', function (e, data) {
-				//$("#fuelux-wizard").submit();
-				//console.log("submitted!");
-				$.smallBox({
-					title: "Congratulations! Your form was submitted",
-					content: "<i class='fa fa-clock-o'></i> <i>1 seconds ago...</i>",
-					color: "#5F895F",
-					iconSmall: "fa fa-check bounce animated",
-					timeout: 4000
-				});
-
-			});
-
-
-		})
-
-	</script>
-
-	<!-- Your GOOGLE ANALYTICS CODE Below -->
-	<script>
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-		_gaq.push(['_trackPageview']);
-
-		(function () {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-
-	</script>
-
 </body>
 
 </html>
