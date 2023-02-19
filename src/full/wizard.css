@@ -1,0 +1,87 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servey-popup {
+    display: none;
+
+    margin: 20px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+
+    /* Shardow */
+    box-shadow:
+        0 4px 8px 0 rgba(62, 62, 62, 0.2),
+        0 6px 20px 0 rgba(57, 57, 57, 0.19);
+}
+
+.servey-content {
+    margin: 20px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.title h3 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.title h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.option-custom {
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.option {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 4px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(159, 183, 255);
+
+}
+
+.option:hover {
+    cursor: pointer;
+    color: white;
+
+    border-style: transparent;
+    background-color: rgb(43, 158, 255);
+}
+
+.option-name {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.tick-icon {
+    width: 20px;
+    margin-bottom: 4px;
+}
+.navigate {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.page-index {
+    font-size: 15px;
+}
