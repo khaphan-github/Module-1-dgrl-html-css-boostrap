@@ -36,6 +36,7 @@
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="wizard.css">
 	<link rel="stylesheet" href="notifipopub.css">
+	<link rel="stylesheet" href="radiocustom.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -122,7 +123,7 @@
 
 	</aside>
 
-		
+
 	<!-- MAIN ELEMENT -->
 	<div id="main" role="main">
 		<!-- Notification Popup -->
@@ -156,43 +157,44 @@
 
 		<div class="flex-center ">
 			<div class="servey-information">
-				<div class="d-flex flex-row justify-content-between content" id="servey-information">
-					<div class="student-info">
-						<h2>1. Thông tin sinh viên</h2>
-						<h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
-						<h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
-						<h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
-						<h5><strong>Số điện thoại: </strong>0329199948</h5>
-						<h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
-						<h5><strong>Khoa:</strong> Khoa công nghệ thông tin</h5>
-					</div>
-					<div class="student-info">
-						<h2>2. Mốc thời gian</h2>
-						<h5><strong>03/01/2023 - 29/01/2023:</strong> Sinh viên tự chấm điểm</h5>
-						<h5><strong>20/01/2023 - 15/02/2023:</strong> Ban cán sự chấm điểm</h5>
-						<h5><strong>17/02/2023 - 13/03/2023:</strong> Khoa chấm điểm</h5>
-						<h5><strong>01/04/2023:</strong> Công bố điểm tổng</h5>
-					</div>
-					<div class="student-info">
-						<h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
-						<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
-						<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
-						<h5><strong>Điểm:</strong> 0/100</h5>
-						<button class=" btn btn-lg btn-primary" style="margin-top:10px"
-							onclick="handlePopup('servey-popup-part-1', 'show');">
-							Đánh giá rèn luyện ngay</button>
-					</div>
-					<div class="student-info">
-						<h2>4. Lịch sử đánh giá rèn luyện</h2>
-						<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
-						<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
-						<h5><strong>Điểm:</strong> 0/100</h5>
-						<button class="btn btn-lg btn-primary" style="margin-top:10px"
-							onclick="location.href='https://sinhvien.hutech.edu.vn/#/sinhvien/ren-luyen-sinh-vien/phieu-danh-gia-list';">
-							Xem lịch sử đánh giá rèn luyện</button>
+				<div class="content">
+					<div class="row" id="servey-information">
+						<div class="col student-info">
+							<h2>1. Thông tin sinh viên</h2>
+							<h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
+							<h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
+							<h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
+							<h5><strong>Số điện thoại: </strong>0329199948</h5>
+							<h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
+							<h5><strong>Khoa:</strong> Khoa công nghệ thông tin</h5>
+						</div>
+						<div class="col student-info">
+							<h2>2. Mốc thời gian</h2>
+							<h5><strong>03/01/2023 - 29/01/2023:</strong> Sinh viên tự chấm điểm</h5>
+							<h5><strong>20/01/2023 - 15/02/2023:</strong> Ban cán sự chấm điểm</h5>
+							<h5><strong>17/02/2023 - 13/03/2023:</strong> Khoa chấm điểm</h5>
+							<h5><strong>01/04/2023:</strong> Công bố điểm tổng</h5>
+						</div>
+						<div class="col student-info">
+							<h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
+							<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
+							<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
+							<h5><strong>Điểm:</strong> 0/100</h5>
+							<button class=" btn btn-lg btn-primary" style="margin-top:10px"
+								onclick="handlePopup('servey-popup-part-1', 'show');">
+								Đánh giá rèn luyện ngay</button>
+						</div>
+						<div class="col student-info">
+							<h2>4. Lịch sử đánh giá rèn luyện</h2>
+							<h5><strong>Điểm đánh giá cao nhất </strong> 98 điểm</h5>
+							<h5><strong>Điểm đánh giá thấp nhất</strong> 79 điểm</h5>
+							<h5><strong>Tổng số học kỳ đã đánh giá: </strong> 5 Học kỳ</h5>
+							<button class="btn btn-lg btn-primary" style="margin-top:10px"
+								onclick="location.href='https://sinhvien.hutech.edu.vn/#/sinhvien/ren-luyen-sinh-vien/phieu-danh-gia-list';">
+								Xem lịch sử đánh giá rèn luyện</button>
+						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 
@@ -220,7 +222,6 @@
 							<!-- <div class="tick">
 								<img class="tick-icon" src="./img/whitte-tick.png" alt="tick-icon">
 							</div> -->
-
 						</div>
 						<div class="option">
 							<p class="option-name">
@@ -387,6 +388,7 @@
 						<h4>Có tác phong lịch sự, ăn mặc nghiêm túc khi đến Trường</h4>
 					</div>
 					<div class="option-custom">
+
 						<div class="option">
 							<p class="option-name">
 								Chấp hành đầy đủ
@@ -437,6 +439,7 @@
 						<h4>Bảo quản tài sản chung, giữ gìn vệ sinh, bỏ rác đúng nơi quy định</h4>
 					</div>
 					<div class="option-custom">
+
 						<div class="option">
 							<p class="option-name">
 								Chấp hành đầy đủ
@@ -1191,55 +1194,12 @@
 	<div class="page-footer">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<span class="txt-color-white">SmartAdmin 1.9.0 <span class="hidden-xs"> - Web Application
-						Framework</span> © 2017-2019</span>
+				<span class="txt-color-white">Bản quyền của HUTECH – Phát triển bởi TTQLCNTT © 2012 - 2023</span>
 			</div>
 
 			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
-				<div class="txt-color-white inline-block">
-					<i class="txt-color-blueLight hidden-mobile">Last account activity <i class="fa fa-clock-o"></i>
-						<strong>52 mins ago &nbsp;</strong> </i>
-					<div class="btn-group dropup">
-						<button class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white" data-toggle="dropdown">
-							<i class="fa fa-link"></i> <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right text-left">
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Download Progress</p>
-									<div class="progress progress-micro no-margin">
-										<div class="progress-bar progress-bar-success" style="width: 50%;"></div>
-									</div>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Server Load</p>
-									<div class="progress progress-micro no-margin">
-										<div class="progress-bar progress-bar-success" style="width: 20%;"></div>
-									</div>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Memory Load <span
-											class="text-danger">*critical*</span></p>
-									<div class="progress progress-micro no-margin">
-										<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
-									</div>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<button class="btn btn-block btn-default">refresh</button>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<span class="txt-color-white">Version 3.1.0  </span>
+				
 			</div>
 		</div>
 	</div>

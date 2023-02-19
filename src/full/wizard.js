@@ -16,6 +16,8 @@ const openFileDialog = () => {
 
     chooseFileDialog.click();
 }
+
+
 // Global Variable
 let totalScore = 0;
 // Process bar handler
