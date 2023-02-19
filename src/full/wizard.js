@@ -59,5 +59,5 @@ const onCloseSuccessNotification = () => {
     handlePopup('notification-popup', 'hide');
 }
 const handlcheckBoxClick = () => {
-
+    return 0;
 }
