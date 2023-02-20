@@ -1,13 +1,47 @@
+.student-info {
+    margin: 20px;
+}
+.student-info h2 {  
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.servey-information {
+    margin: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+
+    /* Shardow */
+    box-shadow:
+        0 4px 8px 0 rgba(62, 62, 62, 0.2),
+        0 6px 20px 0 rgba(57, 57, 57, 0.19);
+}
+.content {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.center-pupub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .servey-popup {
     display: none;
-
-    margin: 20px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     width: 100%;
     border-radius: 4px;
     background-color: white;
@@ -34,12 +68,12 @@
 }
 
 .title h4 {
+    font-weight: 600;
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
 .option-custom {
-
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -55,7 +89,7 @@
 
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(159, 183, 255);
+    border-color: rgb(43, 158, 255);
 
 }
 
@@ -68,7 +102,9 @@
 }
 
 .option-name {
-    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 25px;
+    margin-bottom: 0px;
     font-size: 15px;
 }
 
@@ -76,6 +112,7 @@
     width: 20px;
     margin-bottom: 4px;
 }
+
 .navigate {
     margin-left: 10px;
     margin-top: 10px;
