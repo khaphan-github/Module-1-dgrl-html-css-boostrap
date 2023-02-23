@@ -55,9 +55,11 @@ const openSuccessNotification = () => {
     handlePopup('notification-popup', 'show');
     handlePopup('servey-popup-part-17', 'hide');
 }
+
 const onCloseSuccessNotification = () => {
     handlePopup('notification-popup', 'hide');
 }
+
 const handlcheckBoxClick = () => {
     return 0;
 }
