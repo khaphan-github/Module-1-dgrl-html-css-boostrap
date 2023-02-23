@@ -1,0 +1,56 @@
+.table-element {
+    margin: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 14px;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.notifi-element {
+    margin: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.table-name {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.table-name>h3 {
+    font-weight: 600;
+}
+
+.row-table-content {
+    height: 70px;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+
+.row-element:hover {
+    cursor: pointer;
+    background-color: rgba(182, 182, 182, 0.206)
+}
+
+.status-done {
+    background-color: #396EB0;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.status-uncheck {
+    background-color: #FC997C;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
