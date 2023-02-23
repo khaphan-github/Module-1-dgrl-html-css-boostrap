@@ -51,6 +51,20 @@
         0 4px 8px 0 rgba(62, 62, 62, 0.2),
         0 6px 20px 0 rgba(57, 57, 57, 0.19);
 }
+.servey-popup-show {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+
+    /* Shardow */
+    box-shadow:
+        0 4px 8px 0 rgba(62, 62, 62, 0.2),
+        0 6px 20px 0 rgba(57, 57, 57, 0.19);
+}
 
 .servey-content {
     margin: 20px;
@@ -121,4 +135,9 @@
 
 .page-index {
     font-size: 15px;
+}
+
+.checked-style {
+    color:white;
+    background-color: rgb(43, 158, 255);
 }

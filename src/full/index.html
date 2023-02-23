@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="">
+<body class="smart-style-2">
 	<header id="header">
 		<div id="logo-group">
 			<p id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </p>
@@ -111,10 +111,16 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="wizard.html"><i class="fa fa-lg fa-fw fa-list-alt"></i>
-						<p class="menu-item-parent">Đánh giá rèn luyện</p>
-					</a>
+					<a href="index.html" class="d-flex" style="margin-bottom: -20px">
+                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
+                        <p class="menu-item-parent">Đánh giá rèn luyện</p>
+                    </a>
+					<a href="staff.html" class="d-flex" style="margin-bottom: -20px">
+                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
+                        <p class="menu-item-parent">Ban cán sự</p>
+                    </a>
 				</li>
+				
 			</ul>
 		</nav>
 		<p class="minifyme" data-action="minifyMenu">
@@ -127,7 +133,7 @@
 	<!-- MAIN ELEMENT -->
 	<div id="main" role="main">
 		<!-- Notification Popup -->
-		<div class="center-pupub " id="notification-popup">
+		<div class="center-pupub " id="notification-popup" style="display: none;">
 			<div class="d-flex flex-center">
 				<div class="d-flex flex-column notifi-popup">
 					<div class="success-text">
@@ -190,7 +196,7 @@
 							<h5><strong>Điểm đánh giá thấp nhất</strong> 79 điểm</h5>
 							<h5><strong>Tổng số học kỳ đã đánh giá: </strong> 5 Học kỳ</h5>
 							<button class="btn btn-lg btn-primary" style="margin-top:10px"
-								onclick="location.href='https://sinhvien.hutech.edu.vn/#/sinhvien/ren-luyen-sinh-vien/phieu-danh-gia-list';">
+								onclick="location.href='http://127.0.0.1:5500/src/full/report.html';">
 								Xem lịch sử đánh giá rèn luyện</button>
 						</div>
 					</div>
@@ -202,7 +208,7 @@
 <!-- Each flex-center is a survey form
 	title > h3 : Tên mục đánh giá
 	title > h5 : Mô tả đánh giá
-	title > h4 : Tiêu chí đánh giá
+	title > h4 : Tiêu chí đánh giá	
 	option-name: Lựa chọn cho tiêu chí đánh giá
 -->
 		<div class="flex-center">
@@ -337,7 +343,7 @@
 						<h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
 						<h4>Cập nhật thông tin địa chỉ ngoại trú đầy đủ vào cuối mỗi học kỳ</h4>
 					</div>
-					
+
 					<div class="option-custom">
 						<div class="option">
 							<p class="option-name">
