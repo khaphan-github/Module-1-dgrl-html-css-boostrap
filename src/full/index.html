@@ -36,7 +36,6 @@
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="wizard.css">
 	<link rel="stylesheet" href="notifipopub.css">
-	<link rel="stylesheet" href="radiocustom.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -44,8 +43,8 @@
 
 </head>
 
-<body class="smart-style-2">
-	<header id="header">
+<body class="">
+	<header id="header" class="blur-style">
 		<div id="logo-group">
 			<p id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </p>
 		</div>
@@ -99,29 +98,25 @@
 
 	</header>
 
-	<aside id="left-panel">
-		<div class="login-info">
-			<p> <!-- User image size is adjusted inside CSS, it should stay as it -->
-				<a href="#" id="show-shortcut" data-action="toggleShortcut">
-					<img src="img/avatars/sunny.png" alt="me" class="online" />
-					<i class="fa fa-angle-down"></i>
-				</a>
-			</p>
-		</div>
+	<aside id="left-panel" class="blur-style">
 		<nav>
-			<ul>
-				<li>
-					<a href="index.html" class="">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent" style="font-size: 16px;">Đánh giá rèn luyện</p>
-                    </a>
-				</li>
-				<li>
-					<a href="staff.html">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent" style="font-size: 16px;">Ban cán sự</p>
-                    </a>
-				</li>
+			<ul class="navigator-left-panel">
+				<a href="index.html" class="d-flex flex-row navigator-left-panel-a">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+						fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+						<path
+							d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+					</svg>
+					<p>Đánh giá rèn luyện</p>
+				</a>
+				<a href="staff.html" class="d-flex flex-row navigator-left-panel-a">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+						fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+						<path
+							d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+					</svg>
+					<p class="menu-item-parent">Ban cán sự</p>
+				</a>
 			</ul>
 		</nav>
 		<p class="minifyme" data-action="minifyMenu">
@@ -161,44 +156,12 @@
 				</div>
 			</div>
 		</div>
-<!-- Head of body - Show student info  -->
+		<!-- Head of body - Show student info  -->
 		<div class="flex-center ">
 			<div class="servey-information">
 				<div class="content">
 					<div class="row" id="servey-information">
 						<div class="col student-info">
-							<h2>1. Thông tin sinh viên</h2>
-							<h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
-							<h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
-							<h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
-							<h5><strong>Số điện thoại: </strong>0329199948</h5>
-							<h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
-							<h5><strong>Khoa:</strong> Khoa công nghệ thông tin</h5>
-						</div>
-						<div class="col student-info">
-							<h2>2. Mốc thời gian</h2>
-							<h5><strong>03/01/2023 - 29/01/2023:</strong> Sinh viên tự chấm điểm</h5>
-							<h5><strong>20/01/2023 - 15/02/2023:</strong> Ban cán sự chấm điểm</h5>
-							<h5><strong>17/02/2023 - 13/03/2023:</strong> Khoa chấm điểm</h5>
-							<h5><strong>01/04/2023:</strong> Công bố điểm tổng</h5>
-						</div>
-						<div class="col student-info">
-							<h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
-							<h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
-							<h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
-							<h5><strong>Điểm:</strong> 0/100</h5>
-							<button class=" btn btn-lg btn-primary" style="margin-top:10px"
-								onclick="handlePopup('servey-popup-part-1', 'show');">
-								Đánh giá rèn luyện ngay</button>
-						</div>
-						<div class="col student-info">
-							<h2>4. Lịch sử đánh giá rèn luyện</h2>
-							<h5><strong>Điểm đánh giá cao nhất </strong> 98 điểm</h5>
-							<h5><strong>Điểm đánh giá thấp nhất</strong> 79 điểm</h5>
-							<h5><strong>Tổng số học kỳ đã đánh giá: </strong> 5 Học kỳ</h5>
-							<button class="btn btn-lg btn-primary" style="margin-top:10px"
-								onclick="location.href='http://127.0.0.1:5500/src/full/report.html';">
-								Xem lịch sử đánh giá rèn luyện</button>
 						</div>
 					</div>
 				</div>
@@ -206,60 +169,109 @@
 		</div>
 
 		<!-- Other component -->
-<!-- Each flex-center is a survey form
+		<!-- Each flex-center is a survey form
 	title > h3 : Tên mục đánh giá
 	title > h5 : Mô tả đánh giá
 	title > h4 : Tiêu chí đánh giá	
 	option-name: Lựa chọn cho tiêu chí đánh giá
+	
 -->
-		<div class="flex-center">
-			<div class="servey-popup" id="servey-popup-part-1">
-				<div class="servey-content">
-					<div class="progress" style="height: 3px; margin-right: 10px;">
-						<div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuemin="0"
-							aria-valuemax="100">
+		<div class="title">
+			<h3 style="margin-left: 10px; margin-right: 20px;">Đánh giá rèn luyện kỳ 2 - Năm học 2023</h3>
+		</div>
+		<div class="survey-form-body">
+			<div class="main-survey  d-flex flex-row">
+				<div class="servey-popup" id="servey-popup-part-1">
+					<div class="servey-content">
+						<div class="progress progress-custom-style"
+							style="height: 4px; margin-right: 5px; margin-left: 10px; margin-top: 20px;">
+							<div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuemin="0"
+								aria-valuemax="100">
+							</div>
 						</div>
-					</div>
-					<div class="title">
-						<h3>1. Đánh giá về ý thức tham gia học tập:</h3>
-						<h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ</h5>
-						<h4>Đánh giá về ý thức tham gia học tập, đi học chuyển cần và đúng giờ (6đ):</h4>
-					</div>
-					<div class="option-custom">
-						<div class="option" onclick="handleCheckboxClick()">
-							<p class="option-name">
-								Tôi đi học đầy đủ và không đi trễ
-							</p>
+						<div class="title">
+							<h3>1. Đánh giá về ý thức tham gia học tập:</h3>
+							<h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ
+							</h5>
+							<h4>Đánh giá về ý thức tham gia học tập, đi học chuyển cần và đúng giờ (6đ):</h4>
 						</div>
-						<div class="option">
-							<p class="option-name">
-								Tôi học đầy đủ và có đi trễ
-							</p>
+						<div class="option-custom">
+							<div class="option checked-style d-flex flex-row justify-content-between"
+								onclick="handleCheckboxClick()">
+								<p class="option-name">
+									Tôi đi học đầy đủ và không đi trễ
+								</p>
+								<div >
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+										class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+										<path
+											d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+									</svg>
+								</div>
+
+							</div>
+							<div class="option">
+								<p class="option-name">
+									Tôi học đầy đủ và có đi trễ
+								</p>
+							</div>
+							<div class="option">
+								<p class="option-name">
+									Tôi đi học không đầy đủ
+								</p>
+							</div>
+
 						</div>
-						<div class="option">
-							<p class="option-name">
-								Tôi đi học không đầy đủ
-							</p>
+
+						<div class="d-flex flex-row-reverse navigate">
+
+							<div class="navigate-btn">
+								<button class="btn btn-lg btn-secondary border-4" style="margin-right: 8px;" onclick="">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+										style="margin-left: -8px;" fill="currentColor" class="bi bi-chevron-left"
+										viewBox="0 0 16 16">
+										<path fill-rule="evenodd"
+											d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+									</svg>
+									Quay lại
+								</button>
+								<button class="btn btn-lg btn-primary border-4" style="margin-right:-10px" onclick="">
+									Tiếp
+									tục
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+										style="margin-right: -8px;" fill="currentColor" class="bi bi-chevron-right"
+										viewBox="0 0 16 16">
+										<path fill-rule="evenodd"
+											d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+									</svg>
+								</button>
+							</div>
 						</div>
 
 					</div>
-
-					<div class="d-flex justify-content-between navigate">
-						<div class="d-flex align-items-center page">
-							<p class="page-index">Trang 1</p>
-						</div>
-						<div class="navigate-btn">
-							<button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-								onclick="jumbToServeyIndex('1', '2')">
-								Tiếp
-								tục
-							</button>
-						</div>
+					<div class="">
+						<p class="page-index">Trang 1</p>
 					</div>
 				</div>
+
+				<div class="proof d-flex flex-column">
+					<div class="score-area">
+						<h3>Điểm: <span>3/100</span></h3>
+					</div>
+					<div class="img">
+						<img alt="right-side-image"
+							src="https://popupsmart.com/blog/images/i/l/l/u/s/illustration-of-a-male-designing-9a1907db.jpg">
+					</div>
+				</div>
+				<div class="exit-icon d-flex flex-row-reverse">
+					<img onclick="location.replace('./history.html')" style="position: absolute" src="./x-ion.png" alt="cancle-icon">
+				</div>
 			</div>
+
 		</div>
 
+
+		<!-- 
 		<div class="flex-center">
 			<div class="servey-popup" id="servey-popup-part-2">
 				<div class="servey-content">
@@ -1192,7 +1204,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- END MAIN ELEMENT -->
 
 
@@ -1200,15 +1212,15 @@
 	</div>
 
 	<!-- PAGE FOOTER -->
-	<div class="page-footer">
+	<div class="page-footer blur-style">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<span class="txt-color-white">Bản quyền của HUTECH – Phát triển bởi TTQLCNTT © 2012 - 2023</span>
 			</div>
 
 			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
-				<span class="txt-color-white">Version 3.1.0  </span>
-				
+				<span class="txt-color-white">Version 3.1.0 </span>
+
 			</div>
 		</div>
 	</div>

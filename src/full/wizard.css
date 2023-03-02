@@ -1,79 +1,33 @@
-.student-info {
-    margin: 20px;
-}
-.student-info h2 {  
-    margin-bottom: 12px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.servey-information {
-    margin: 10px;
-    margin-bottom: 15px;
-    width: 100%;
-    border-radius: 4px;
-    background-color: white;
-
-    /* Shardow */
-    box-shadow:
-        0 4px 8px 0 rgba(62, 62, 62, 0.2),
-        0 6px 20px 0 rgba(57, 57, 57, 0.19);
-}
 .content {
     margin-top: 20px;
     margin-right: 30px;
     margin-left: 10px;
 }
 
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .center-pupub {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .servey-popup {
-    display: none;
-    
-    margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     width: 100%;
     border-radius: 4px;
-    background-color: white;
-
-    /* Shardow */
-    box-shadow:
-        0 4px 8px 0 rgba(62, 62, 62, 0.2),
-        0 6px 20px 0 rgba(57, 57, 57, 0.19);
-}
-.servey-popup-show {
-    
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 4px;
-    background-color: white;
-
-    /* Shardow */
-    box-shadow:
-        0 4px 8px 0 rgba(62, 62, 62, 0.2),
-        0 6px 20px 0 rgba(57, 57, 57, 0.19);
 }
 
 .servey-content {
-    margin: 20px;
+    margin: 10px;
+    overflow: hidden;
 }
 
 .title {
     margin-left: 10px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .title h3 {
@@ -89,7 +43,6 @@
 
 .option-custom {
     margin-left: 10px;
-    margin-right: 10px;
 }
 
 .option {
@@ -103,16 +56,15 @@
 
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(43, 158, 255);
 
+    border-color: rgb(205, 231, 255);
 }
 
 .option:hover {
     cursor: pointer;
     color: white;
-
+    background-color: cornflowerblue;
     border-style: transparent;
-    background-color: rgb(43, 158, 255);
 }
 
 .option-name {
@@ -135,9 +87,128 @@
 
 .page-index {
     font-size: 15px;
+    margin-bottom: -10px;
+    margin-left: 20px;
 }
 
 .checked-style {
-    color:white;
-    background-color: rgb(43, 158, 255);
+    color: white;
+    background-color: cornflowerblue;
+
+}
+
+.proof {
+    margin-top: 10px;
+}
+
+.main-survey {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 4px;
+    /* Shardow */
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.survey-form-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border-radius: 4px;
+    background-color: white;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   
+}
+.blur-style {
+    pointer-events: none;
+
+    transition:0.2s;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+.img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.img>img {
+    width: 500px;
+}
+
+.exit-icon {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.exit-icon>img {
+    width: 20px;
+    height: 18px;
+}
+
+.exit-icon>img:hover {
+    cursor: pointer;
+    width: 22px;
+    height: 20px;
+}
+
+.score-area {
+    display: flex;
+    align-items: center;
+    height: 38px;
+
+    border-radius: 3px;
+
+}
+
+.score-area>h3 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 50px;
+
+}
+
+.score-area>h3>span {
+    font-size: 18px;
+    font-weight: 600
+}
+
+.navigate-btn>svg {
+    color: white;
+    margin-right: 10px;
+}
+
+.check-icon-style {
+    margin-top: 1px;
+    margin-right: 20px;
+}
+.navigator-left-panel {
+    margin: 15px;
+}
+.navigator-left-panel-a {
+
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.navigator-left-panel-a>p {
+    border-radius: 3px;
+    padding: 15px;
+    margin-right: 15px;
+}
+.navigator-left-panel-a>p:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(45, 45, 45);
 }
