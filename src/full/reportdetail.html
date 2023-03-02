@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="smart-style-2">
+<body class="">
     <header id="header">
         <div id="logo-group">
             <p id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </p>
@@ -99,27 +99,26 @@
 
     </header>
 
+
     <aside id="left-panel">
-        <div class="login-info">
-            <p> <!-- User image size is adjusted inside CSS, it should stay as it -->
-                <a href="#" id="show-shortcut" data-action="toggleShortcut">
-                    <img src="img/avatars/sunny.png" alt="me" class="online" />
-                    <i class="fa fa-angle-down"></i>
-                </a>
-            </p>
-        </div>
         <nav>
-            <ul>
-                <li>
-					<a href="index.html" class="d-flex" style="margin-bottom: -20px">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent">Đánh giá rèn luyện</p>
-                    </a>
-					<a href="staff.html" class="d-flex" style="margin-bottom: -20px">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent">Ban cán sự</p>
-                    </a>
-				</li>
+            <ul class="navigator-left-panel">
+                <a href="history.html" class="d-flex flex-row navigator-left-panel-a">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+                        fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                    <p>Đánh giá rèn luyện</p>
+                </a>
+                <a href="staff.html" class="d-flex flex-row navigator-left-panel-a">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+                        fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                    <p class="menu-item-parent">Ban cán sự</p>
+                </a>
             </ul>
         </nav>
         <p class="minifyme" data-action="minifyMenu">
@@ -128,19 +127,19 @@
 
     </aside>
 
-
     <!-- MAIN ELEMENT -->
     <div id="main" role="main">
 
         <!-- Head of body - Show student info  -->
-        <div class="flex-center ">
+          <!-- Head of body - Show student info  -->
+          <div class="flex-center ">
             <div class="servey-information">
                 <div class="content">
                     <div class="row" id="servey-information">
                         <div class="col student-info">
                             <h2>1. Thông tin sinh viên</h2>
                             <h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
-                            <h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
+                            <h5><strong>Họ và tên: </strong>Nguyễn Trần Anh Duy</h5>
                             <h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
                             <h5><strong>Số điện thoại: </strong>0329199948</h5>
                             <h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
@@ -155,982 +154,1331 @@
                         </div>
                         <div class="col student-info">
                             <h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
-                            <h5><strong>Trạng Thái: </strong> Đã đánh giá</h5>
+                            <h5><strong>Trạng Thái: </strong> Chưa đánh giá</h5>
                             <h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
-                            <h5><strong>Điểm:</strong> 85/100</h5>
-                            <button class=" btn btn-lg btn-primary" style="margin-top:10px"
-                                onclick="location.replace('http://127.0.0.1:5500/src/full/index.html')">
-                                Đi đến đánh giá cho kỳ này</button>
+                            <h5><strong>Sinh viên chưa đánh giá:</strong> 39/50</h5>
+                            <button class="btn btn-lg btn-primary" style="margin-top:10px"
+                                onclick="location.href='http://127.0.0.1:5500/src/full/surveytable.html';">
+                              Xem danh sách</button>
                         </div>
                         <div class="col student-info">
-                            <h2>4. Lịch sử đánh giá rèn luyện</h2>
+                            <h2>4. Danh sách sinh viên</h2>
                             <h5><strong>Điểm đánh giá cao nhất </strong> 98 điểm</h5>
                             <h5><strong>Điểm đánh giá thấp nhất</strong> 79 điểm</h5>
                             <h5><strong>Tổng số học kỳ đã đánh giá: </strong> 5 Học kỳ</h5>
-                            <button class="btn btn-lg btn-primary" style="margin-top:10px"
-                                onclick="location.href='http://127.0.0.1:5500/src/full/report.html';">
-                                Xem lịch sử đánh giá rèn luyện</button>
+                          
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Other component -->
-        <!-- Each flex-center is a survey form
+        <div class="title">
+            <h3 style="margin-top: 20px; margin-left: 10px; margin-right: 20px; margin-bottom: 10px">Chi tiết phiếu
+                đánh giá học kỳ 2 - Năm học 2022 - 2023 </h3>
+        </div>
+
+        <div class="main-content-body">
+            <!-- <div class="flex-center">
+                <div class="servey-information">
+                    <div class="content">
+                        <div class="row" id="servey-information">
+                            <div class="col student-info">
+                                <h2>1. Thông tin sinh viên</h2>
+                                <h5><strong>Mã số sinh viên:</strong> 2080600383</h5>
+                                <h5><strong>Họ và tên: </strong>Phan Hoàng Kha</h5>
+                                <h5><strong>Email: </strong>phanhoangkha01@gmail.com</h5>
+                                <h5><strong>Số điện thoại: </strong>0329199948</h5>
+                                <h5><strong>Lớp sinh hoạt:</strong> 20DTHE2</h5>
+                                <h5><strong>Khoa:</strong> Khoa công nghệ thông tin</h5>
+                            </div>
+
+                            <div class="col student-info">
+                                <h2>3. Điểm rèn luyện Học kỳ II Năm 2023</h2>
+                                <h5><strong>Trạng Thái: </strong> Đã đánh giá</h5>
+                                <h5><strong>Thời hạn: </strong> Còn 5 ngày để đánh giá</h5>
+                                <h5><strong>Điểm:</strong> 85/100</h5>
+                            </div>
+                            <div class="col student-info">
+                                <h2>4. Lịch sử đánh giá rèn luyện</h2>
+                                <h5><strong>Điểm đánh giá cao nhất </strong> 98 điểm</h5>
+                                <h5><strong>Điểm đánh giá thấp nhất</strong> 79 điểm</h5>
+                                <h5><strong>Tổng số học kỳ đã đánh giá: </strong> 5 Học kỳ</h5>
+                                <button class="btn btn-lg btn-primary" style="margin-top:10px"
+                                    onclick="location.href='http://127.0.0.1:5500/src/full/report.html';">
+                                    Xem lịch sử đánh giá rèn luyện</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Other component -->
+            <!-- Each flex-center is a survey form
 	title > h3 : Tên mục đánh giá
 	title > h5 : Mô tả đánh giá
 	title > h4 : Tiêu chí đánh giá	
 	option-name: Lựa chọn cho tiêu chí đánh giá
 -->
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-1">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-1">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
                         </div>
-                    </div>
-                    <div class="title">
-                        <h3>1. Đánh giá về ý thức tham gia học tập:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ</h5>
-                        <h4>Đánh giá về ý thức tham gia học tập, đi học chuyển cần và đúng giờ (6đ):</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option checked-style" onclick="handleCheckboxClick()">
-                            <p class="option-name">
-                                Tôi đi học đầy đủ và không đi trễ
-                            </p>
+                        <div class="title">
+                            <h3>1. Đánh giá về ý thức tham gia học tập:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ
+                            </h5>
+                            <h4>Đánh giá về ý thức tham gia học tập, đi học chuyển cần và đúng giờ (6đ):
+                            </h4>
                         </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi học đầy đủ và có đi trễ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi đi học không đầy đủ
-                            </p>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between"
+                                onclick="handleCheckboxClick()">
+                                <p class="option-name">
+                                    Tôi đi học đầy đủ và không đi trễ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi học đầy đủ và có đi trễ
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi đi học không đầy đủ
+                                </p>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 1</p>
-                        </div>
-                        <div class="navigate-btn">
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('1', '2')">
-                                Cập nhật
-                            </button>
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 1</p>
+                            </div>
+                            <div class="navigate-btn">
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('1', '2')">
+                                    Cập nhật
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-2">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-2">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
                         </div>
-                    </div>
-                    <div class="title">
-                        <h3>1. Đánh giá về ý thức tham gia học tập:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ
-                        </h5>
-                        <h4>Các hoạt động bạn đã tham gia (6đ) được chọn nhiều: </h4>
-                    </div>
-                    <div class="option-custom ">
-                        <div class="option require-proof checked-style">
-                            <p class="option-name">
-                                Tôi là thành viên, thường xuyên tham gia sinh hoạt các CLB học thuật cấp Khoa/ Viện
+                        <div class="title">
+                            <h3>1. Đánh giá về ý thức tham gia học tập:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm). Đơn vị điểm: đ
+                            </h5>
+                            <h4>Các hoạt động bạn đã tham gia (6đ) được chọn nhiều: </h4>
+                        </div>
+                        <div class="option-custom ">
+                            <div class="option checked-style d-flex flex-row justify-content-between"
+                                onclick="handlePopup('proof-image', 'show')" class="option-name">
+                                <p class="option-name">
+                                Tôi là thành viên, thường xuyên tham gia sinh hoạt các CLB học thuật cấp Khoa/
+                                Viện
                                 trở lên (Yêu cầu minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi có tham gia ít nhất 01 cuộc thi học thuật cấp Khoa/ Viện trở lên
-                                (Yêu cầu minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi có tham gia ít nhất 01 buổi hội thảo liên quan đến hoạt động khởi nghiệp hoặc chương
-                                trình tọa đàm, hội thảo khoa học, hội thảo kỹ năng mềm.
-                                (Yêu cầu minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi có đề tài tham gia nghiên cứu khoa học cấp Khoa/ Viện trở lên hoặc có bài viết
-                                nghiên
-                                cứu khoa học được đăng trên website, báo, tạp chí liên quan
-                                (Yêu cầu minh chứng)
-                            </p>
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="proof-image " id="proof-image" style="text-align: center; display: none">
+                                <img style="width: 60%; " class=""
+                                    src="https://free.vector6.com/wp-content/uploads/2020/09/free-000683-mau-giay-chung-nhan-vector.jpg"
+                                    alt="proof">
+                            </div>
+
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi có tham gia ít nhất 01 cuộc thi học thuật cấp Khoa/ Viện trở lên
+                                    (Yêu cầu minh chứng)
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi có tham gia ít nhất 01 buổi hội thảo liên quan đến hoạt động khởi nghiệp
+                                    hoặc
+                                    chương
+                                    trình tọa đàm, hội thảo khoa học, hội thảo kỹ năng mềm.
+                                    (Yêu cầu minh chứng)
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi có đề tài tham gia nghiên cứu khoa học cấp Khoa/ Viện trở lên hoặc có bài
+                                    viết
+                                    nghiên
+                                    cứu khoa học được đăng trên website, báo, tạp chí liên quan
+                                    (Yêu cầu minh chứng)
+                                </p>
+                            </div>
+
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được khen thưởng trong
+                                    học
+                                    kỳ
+                                    hoặc
+                                    đạt các giải thưởng về nghiên cứu khoa học, cuộc thi học thuật
+                                    (Yêu cầu minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="proof-image " id="proof-image" style="text-align: center; display: none">
+                                <img style="width: 60%; " class=""
+                                    src="https://free.vector6.com/wp-content/uploads/2020/09/free-000683-mau-giay-chung-nhan-vector.jpg"
+                                    alt="proof">
+                            </div>
+
                         </div>
 
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được khen thưởng trong học kỳ
-                                hoặc
-                                đạt các giải thưởng về nghiên cứu khoa học, cuộc thi học thuật
-                                (Yêu cầu minh chứng)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 2</p>
-                        </div>
-                        <div class="navigate-btn">
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 2</p>
+                            </div>
+                            <div class="navigate-btn">
 
 
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('2', '3')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-3">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Cập nhật thông tin địa chỉ ngoại trú đầy đủ vào cuối mỗi học kỳ</h4>
-                    </div>
-
-                    <div class="option-custom">
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Cập nhật đầy đủ thông tin địa chỉ ngoại trú
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-between option">
-                            <p class="option-name">
-                                Xác nhận không thay đổi thông tin địa chỉ ngoại trú so với học kỳ trước
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Không thực hiện
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 3</p>
-                        </div>
-                        <div class="navigate-btn">
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('3', '4')">
-                                Cập nhật
-                            </button>
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('2', '3')">
+                                    Cập nhật
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-3">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:
+                            </h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Cập nhật thông tin địa chỉ ngoại trú đầy đủ vào cuối mỗi học kỳ</h4>
+                        </div>
 
+                        <div class="option-custom">
+                            <div
+                                class="option checked-style d-flex flex-row justify-content-between d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Cập nhật đầy đủ thông tin địa chỉ ngoại trú
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between option">
+                                <p class="option-name">
+                                    Xác nhận không thay đổi thông tin địa chỉ ngoại trú so với học kỳ trước
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Không thực hiện
+                                </p>
+                            </div>
+                        </div>
 
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-4">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 3</p>
+                            </div>
+                            <div class="navigate-btn">
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('3', '4')">
+                                    Cập nhật
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="title">
-                        <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Có tác phong lịch sự, ăn mặc nghiêm túc khi đến Trường</h4>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-4">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:
+                            </h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Có tác phong lịch sự, ăn mặc nghiêm túc khi đến Trường</h4>
+                        </div>
+                        <div class="option-custom">
+
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Chấp hành đầy đủ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Chưa chấp hành đầy đủ
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Không chấp hành
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 4</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('4', '5')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="option-custom">
+                </div>
+            </div>
 
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Chấp hành đầy đủ
-                            </p>
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-5">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
                         </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Chưa chấp hành đầy đủ
-                            </p>
+                        <div class="title">
+                            <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:
+                            </h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Bảo quản tài sản chung, giữ gìn vệ sinh, bỏ rác đúng nơi quy định</h4>
                         </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Không chấp hành
-                            </p>
+                        <div class="option-custom">
+
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Chấp hành đầy đủ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Chưa chấp hành đầy đủ
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Không chấp hành
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 5</p>
+                            </div>
+                            <div class="navigate-btn">
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('5', '6')">
+                                    Cập nhật
+                                </button>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 4</p>
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-6">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
                         </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('4', '5')">
-                                Cập nhật
-                            </button>
+                        <div class="title">
+                            <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:
+                            </h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Đeo bảng tên do Nhà Trường quy định khi đến trường và khi dự thi học kỳ</h4>
                         </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Chấp hành đầy đủ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Chưa chấp hành đầy đủ
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Không chấp hành
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 6</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('6', '7')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-7">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:
+                            </h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Các hoạt động bạn đã tham gia</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Bổ sung minh chứng 1
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name ">
+                                    Bổ sung minh chứng 2
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ sung minh chứng 3
+                                </p>
+                            </div>
+
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ sung minh chứng 4
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ sung minh chứng 5
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ sung minh chứng 6
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 7</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('7', '8')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-8">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ,
+                                thể
+                                thao,
+                                phòng chống tội phạm và các tệ nạn xã hội:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
+                            <h4>Các hoạt động bạn đã tham gia</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.1. Tham gia hoạt động ngoại khóa hoặc hỗ trợ, cổ vũ cho các hoạt động văn hóa,
+                                    văn
+                                    nghệ, thể dục, thể thao do Lớp, Khoa/ Viện hoặc Nhà trường tổ chức (có minh
+                                    chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div class="option">
+                                <p class="option-name">
+                                    3.2. Tham gia sinh hoạt chi Đoàn hoặc các buổi báo cáo chuyên đề về tình hình
+                                    thời
+                                    sự,
+                                    chính trị, xã hội, hội nhập đất nước do Khoa/ Viện, Trường tổ chức (có minh
+                                    chứng)
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    3.3. Tham gia Hội thao hoặc chương trình văn nghệ do Khoa/Viện, Nhà trường tổ
+                                    chức
+                                    (có
+                                    minh chứng)
+                                </p>
+                            </div>
+
+                            <div class="option">
+                                <p class="option-name">
+                                    3.4. Tham gia đóng góp hoặc hỗ trợ hoạt động tình nguyện do Lớp, Khoa/ Viện,
+                                    Trường
+                                    tổ
+                                    chức như thăm mái ấm, nhà mở, trung tâm khuyết tật, nuôi dưỡng người già,…(có
+                                    minh
+                                    chứng)
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    3.5. Tham gia đầy đủ và hoàn thành bài thu hoạch các buổi sinh hoạt công dân đầu
+                                    khóa
+                                    (đối với năm nhất) hoặc tham gia đầy đủ các buổi sinh hoạt của Lớp
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 8</p>
+                            </div>
+                            <div class="navigate-btn">
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('8', '9')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-9">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ,
+                                thể
+                                thao,
+                                phòng chống tội phạm và các tệ nạn xã hội:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
+                            <h4>Các hoạt động bạn đã tham gia</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các
+                                    tệ
+                                    nạn
+                                    trong trường học và ngoài xã hội (có minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div class="option">
+                                <p class="option-name">
+                                    3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn
+                                    hóa,
+                                    văn
+                                    nghệ, thể thao (có minh chứng)
+                                </p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện,
+                                    Nhà
+                                    trường tổ chức (có minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do
+                                    Ban
+                                    chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div class="option">
+                                <p class="option-name">
+                                    3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc
+                                    thi
+                                    về
+                                    văn hóa, văn nghệ, thể thao (có minh chứng)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 9</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('9', '10')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-10">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ,
+                                thể
+                                thao,
+                                phòng chống tội phạm và các tệ nạn xã hội:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
+                            <h4>Các hoạt động bạn đã tham gia</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option">
+                                <p class="option-name">
+                                    3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các
+                                    tệ
+                                    nạn
+                                    trong trường học và ngoài xã hội (có minh chứng)
+                                </p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn
+                                    hóa,
+                                    văn
+                                    nghệ, thể thao (có minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện,
+                                    Nhà
+                                    trường tổ chức (có minh chứng)
+                                </p>
+                            </div>
+
+                            <div class="option">
+                                <p class="option-name">
+                                    3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do
+                                    Ban
+                                    chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc
+                                    thi
+                                    về
+                                    văn hóa, văn nghệ, thể thao (có minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 10</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('10', '11')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-11">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ,
+                                thể
+                                thao,
+                                phòng chống tội phạm và các tệ nạn xã hội:</h3>
+                            <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
+                            <h4>Tham gia các hoạt động cần huy động lực lượng sinh viên tham dự do các cấp thông
+                                báo:
+                            </h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 1
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 2
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 3
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 11</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('11', '12')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-12">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4></h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option">
+                                <p class="option-name">
+                                    4.1. Có mối quan hệ vui vẻ và hòa đồng với nhân dân địa phương nơi cư trú
+                                </p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    4.2. Hoàn thành tốt mọi nghĩa vụ công dân theo đúng quy định của pháp luật, thể
+                                    hiện
+                                    được phẩm chất của một công dân gương mẫu
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    4.3. Không bị cơ quan an ninh hoặc cơ quan Nhà nước có thẩm quyền gửi thông báo
+                                    vi
+                                    phạm
+                                    công tác giữ gìn an ninh trật tự, an toàn xã hội, an toàn giao thông tại địa
+                                    phương
+                                    về
+                                    Trường
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="option">
+                                <p class="option-name">
+                                    4.4. Sinh viên hòa đồng, nhiệt tình, giúp đỡ bạn bè trong Lớp, Khoa, Trường cùng
+                                    tiến
+                                    bộ. Không chia rẽ bè phái, gây bất hòa, xích mích trong nội bộ, làm ảnh hưởng
+                                    đến
+                                    tinh
+                                    thần đoàn kết của tập thể
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 12</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('12', '13')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-13">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4>Tham gia các hoạt động cộng đồng khác tại địa phương hoặc của các tổ chức xã hội
+                            </h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 1
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 2
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Bổ xung minh chứng hoạt động 3
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 13</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('13', '14')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-14">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
+                            <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
+                            <h4></h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Tham gia hiến máu nhân đạo hoặc là thành viên ban tổ chức, ban điều hành các đội
+                                    hình
+                                    sinh viên tình nguyện từ cấp Trường trở lên (có minh chứng)
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    4.7. Được tuyên dương, khen thưởng khi tham gia các hoạt động cộng đồng tại địa
+                                    phương
+                                    (có minh chứng)
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    4.8. Đạt danh hiệu Sinh viên 5 tốt cấp Khoa/ Viện trở lên (có minh chứng)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 14</p>
+                            </div>
+                            <div class="navigate-btn">
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('14', '15')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-15">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội
+                                SV và
+                                các
+                                tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập,
+                                rèn
+                                luyện
+                                của sinh viên:</h3>
+                            <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
+                            <h4>Phần giành cho Ban cán sự lớp, Cán bộ Đoàn, Hội</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Có kế hoạch tổ chức các hoạt động, phong trào của lớp trong học kỳ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Triển khai đầy đủ thông tin hoạt động của Khoa/ Viện, Trường đến sinh viên
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Tham gia đầy đủ các buổi họp và tập huấn cán bộ lớp trong học kỳ
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tổ chức ít nhất 2 hoạt động ngoại khóa dành cho sinh viên Lớp
+                                </p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Vận động tập thể lớp đăng ký tham gia “Lớp học tiên tiến” hoặc vận động được 10%
+                                    sinh
+                                    viên trong lớp đăng ký “Sinh viên 5 tốt”
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 15</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('15', '16')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-16">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội
+                                SV và
+                                các
+                                tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập,
+                                rèn
+                                luyện
+                                của sinh viên:</h3>
+                            <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
+                            <h4>Tham gia các buổi sinh hoạt, hoạt động của Lớp:</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Tham gia đầy đủ và tích cực
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tham gia đầy đủ nhưng chưa tích cực
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tham gia không đầy đủ
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Không tham gia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 16</p>
+                            </div>
+                            <div class="navigate-btn">
+
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="jumbToServeyIndex('16', '17')">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+                <div class="servey-popup-show" id="servey-popup-show-part-17">
+                    <div class="servey-content">
+                        <div class="progress" style="height: 3px; margin-right: 10px; margin-left: 15px">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
+                                aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội
+                                SV và
+                                các
+                                tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập,
+                                rèn
+                                luyện
+                                của sinh viên:</h3>
+                            <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
+                            <h4>Đánh giá về việc tham gia các buổi sinh hoạt, hoạt động của Lớp:</h4>
+                        </div>
+                        <div class="option-custom">
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi là nhân tố tích cực, chủ động tổ chức hoạt động, phong trào Lớp
+                                </p>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi là thành viên của Lớp được công nhận đạt danh hiệu “Lớp học tiên tiến”
+                                </p>
+                            </div>
+                            <div class="option checked-style d-flex flex-row justify-content-between">
+                                <p class="option-name">
+                                    Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được giới thiệu tham gia
+                                    học
+                                    lớp
+                                    cảm
+                                    tình Đảng hoặc xét kết nạp Đảng
+                                </p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-all check-icon-style" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <p class="option-name">
+                                    Tôi không tham gia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between navigate">
+                            <div class="d-flex align-items-center page">
+                                <p class="page-index">Trang 17</p>
+                            </div>
+                            <div class="navigate-btn">
+
+                                <button class="btn btn-lg btn-primary border-4" style="margin-right: -5px"
+                                    onclick="openSuccessNotification()">
+                                    Cập nhật
+                                </button>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-5">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Bảo quản tài sản chung, giữ gìn vệ sinh, bỏ rác đúng nơi quy định</h4>
-                    </div>
-                    <div class="option-custom">
-
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Chấp hành đầy đủ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Chưa chấp hành đầy đủ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Không chấp hành
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 5</p>
-                        </div>
-                        <div class="navigate-btn">
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('5', '6')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-6">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Đeo bảng tên do Nhà Trường quy định khi đến trường và khi dự thi học kỳ</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Chấp hành đầy đủ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Chưa chấp hành đầy đủ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Không chấp hành
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 6</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('6', '7')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-7">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>2. Đánh giá về ý thức chấp hành các nội quy, quy chế, quy định trong Nhà trường:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Các hoạt động bạn đã tham gia</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Bổ sung minh chứng 1
-                            </p>
-                        </div>
-                        <div class="option checked-style">
-                            <p class="option-name ">
-                                Bổ sung minh chứng 2
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ sung minh chứng 3
-                            </p>
-                        </div>
-
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ sung minh chứng 4
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ sung minh chứng 5
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ sung minh chứng 6
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 7</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('7', '8')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-8">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ, thể thao,
-                            phòng chống tội phạm và các tệ nạn xã hội:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
-                        <h4>Các hoạt động bạn đã tham gia</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                3.1. Tham gia hoạt động ngoại khóa hoặc hỗ trợ, cổ vũ cho các hoạt động văn hóa, văn
-                                nghệ, thể dục, thể thao do Lớp, Khoa/ Viện hoặc Nhà trường tổ chức (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.2. Tham gia sinh hoạt chi Đoàn hoặc các buổi báo cáo chuyên đề về tình hình thời sự,
-                                chính trị, xã hội, hội nhập đất nước do Khoa/ Viện, Trường tổ chức (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.3. Tham gia Hội thao hoặc chương trình văn nghệ do Khoa/Viện, Nhà trường tổ chức (có
-                                minh chứng)
-                            </p>
-                        </div>
-
-                        <div class="option">
-                            <p class="option-name">
-                                3.4. Tham gia đóng góp hoặc hỗ trợ hoạt động tình nguyện do Lớp, Khoa/ Viện, Trường tổ
-                                chức như thăm mái ấm, nhà mở, trung tâm khuyết tật, nuôi dưỡng người già,…(có minh
-                                chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.5. Tham gia đầy đủ và hoàn thành bài thu hoạch các buổi sinh hoạt công dân đầu khóa
-                                (đối với năm nhất) hoặc tham gia đầy đủ các buổi sinh hoạt của Lớp
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 8</p>
-                        </div>
-                        <div class="navigate-btn">
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('8', '9')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-9">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ, thể thao,
-                            phòng chống tội phạm và các tệ nạn xã hội:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
-                        <h4>Các hoạt động bạn đã tham gia</h4>
-                    </div>
-                    <div class="option-custom">
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các tệ nạn
-                                trong trường học và ngoài xã hội (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn hóa, văn
-                                nghệ, thể thao (có minh chứng)
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện, Nhà
-                                trường tổ chức (có minh chứng)
-                            </p>
-                        </div>
-
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do Ban
-                                chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc thi về
-                                văn hóa, văn nghệ, thể thao (có minh chứng)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 9</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('9', '10')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-10">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ, thể thao,
-                            phòng chống tội phạm và các tệ nạn xã hội:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
-                        <h4>Các hoạt động bạn đã tham gia</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option">
-                            <p class="option-name">
-                                3.6. Tham gia các phong trào phòng chống, lên án các hiện tượng tiêu cực và các tệ nạn
-                                trong trường học và ngoài xã hội (có minh chứng)
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                3.9. Là thành viên của đội tuyển cấp Khoa/ Viện tham gia các cuộc thi về văn hóa, văn
-                                nghệ, thể thao (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                3.1. Đạt giải thưởng khi tham gia Hội thao, chương trình văn nghệ do Khoa/Viện, Nhà
-                                trường tổ chức (có minh chứng)
-                            </p>
-                        </div>
-
-                        <div class="option">
-                            <p class="option-name">
-                                3.11. Là chiến sỹ tình nguyện Xuân tình nguyện, Tiếp sức mùa thi, Mùa hè xanh do Ban
-                                chấp hành Đoàn TN, Hội SV tổ chức (có minh chứng)</p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                3.12. Là thành viên của đội tuyển hoặc cá nhân đại diện Trường tham gia các cuộc thi về
-                                văn hóa, văn nghệ, thể thao (có minh chứng)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 10</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('10', '11')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-11">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>3. Đánh giá về ý thức tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ, thể thao,
-                            phòng chống tội phạm và các tệ nạn xã hội:</h3>
-                        <h5>Khung điểm đánh giá từ 0-20 điểm (tối thiểu 0 điểm , tối đa 20 điểm)</h5>
-                        <h4>Tham gia các hoạt động cần huy động lực lượng sinh viên tham dự do các cấp thông báo:</h4>
-                    </div>
-                    <div class="option-custom">
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 1
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 2
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 3
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 11</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('11', '12')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-12">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4></h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option">
-                            <p class="option-name">
-                                4.1. Có mối quan hệ vui vẻ và hòa đồng với nhân dân địa phương nơi cư trú
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                4.2. Hoàn thành tốt mọi nghĩa vụ công dân theo đúng quy định của pháp luật, thể hiện
-                                được phẩm chất của một công dân gương mẫu
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                4.3. Không bị cơ quan an ninh hoặc cơ quan Nhà nước có thẩm quyền gửi thông báo vi phạm
-                                công tác giữ gìn an ninh trật tự, an toàn xã hội, an toàn giao thông tại địa phương về
-                                Trường
-                            </p>
-                        </div>
-
-                        <div class="option">
-                            <p class="option-name">
-                                4.4. Sinh viên hòa đồng, nhiệt tình, giúp đỡ bạn bè trong Lớp, Khoa, Trường cùng tiến
-                                bộ. Không chia rẽ bè phái, gây bất hòa, xích mích trong nội bộ, làm ảnh hưởng đến tinh
-                                thần đoàn kết của tập thể
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 12</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('12', '13')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-13">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4>Tham gia các hoạt động cộng đồng khác tại địa phương hoặc của các tổ chức xã hội</h4>
-                    </div>
-                    <div class="option-custom">
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 1
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 2
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Bổ xung minh chứng hoạt động 3
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 13</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('13', '14')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-14">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>4. Đánh giá về trách nhiệm công dân và quan hệ cộng đồng:</h3>
-                        <h5>Khung điểm đánh giá từ 0-25 điểm (tối thiểu 0 điểm , tối đa 25 điểm)</h5>
-                        <h4></h4>
-                    </div>
-                    <div class="option-custom">
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Tham gia hiến máu nhân đạo hoặc là thành viên ban tổ chức, ban điều hành các đội hình
-                                sinh viên tình nguyện từ cấp Trường trở lên (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                4.7. Được tuyên dương, khen thưởng khi tham gia các hoạt động cộng đồng tại địa phương
-                                (có minh chứng)
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                4.8. Đạt danh hiệu Sinh viên 5 tốt cấp Khoa/ Viện trở lên (có minh chứng)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 14</p>
-                        </div>
-                        <div class="navigate-btn">
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('14', '15')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-15">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội SV và các
-                            tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập, rèn luyện
-                            của sinh viên:</h3>
-                        <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
-                        <h4>Phần giành cho Ban cán sự lớp, Cán bộ Đoàn, Hội</h4>
-                    </div>
-                    <div class="option-custom">
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Có kế hoạch tổ chức các hoạt động, phong trào của lớp trong học kỳ
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Triển khai đầy đủ thông tin hoạt động của Khoa/ Viện, Trường đến sinh viên
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Tham gia đầy đủ các buổi họp và tập huấn cán bộ lớp trong học kỳ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tổ chức ít nhất 2 hoạt động ngoại khóa dành cho sinh viên Lớp
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Vận động tập thể lớp đăng ký tham gia “Lớp học tiên tiến” hoặc vận động được 10% sinh
-                                viên trong lớp đăng ký “Sinh viên 5 tốt”
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 15</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('15', '16')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-16">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội SV và các
-                            tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập, rèn luyện
-                            của sinh viên:</h3>
-                        <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
-                        <h4>Tham gia các buổi sinh hoạt, hoạt động của Lớp:</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option checked-style">
-                            <p class="option-name">
-                                Tham gia đầy đủ và tích cực
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tham gia đầy đủ nhưng chưa tích cực
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tham gia không đầy đủ
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Không tham gia
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 16</p>
-                        </div>
-                        <div class="navigate-btn">
-
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="jumbToServeyIndex('16', '17')">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-center">
-            <div class="servey-popup-show" id="servey-popup-show-part-17">
-                <div class="servey-content">
-                    <div class="progress" style="height: 3px; margin-right: 10px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0"
-                            aria-valuemax="100">
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>5. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ Lớp, Đảng, Đoàn, Hội SV và các
-                            tổ chức hợp pháp khác trong Nhà trường hoặc các thành tích đặc biệt trong học tập, rèn luyện
-                            của sinh viên:</h3>
-                        <h5>Khung điểm đánh giá từ 0 đến 10 điểm (tối thiểu 0 điểm , tối đa 10 điểm)</h5>
-                        <h4>Đánh giá về việc tham gia các buổi sinh hoạt, hoạt động của Lớp:</h4>
-                    </div>
-                    <div class="option-custom">
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi là nhân tố tích cực, chủ động tổ chức hoạt động, phong trào Lớp
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi là thành viên của Lớp được công nhận đạt danh hiệu “Lớp học tiên tiến”
-                            </p>
-                        </div>
-                       <div class="option checked-style">
-                            <p class="option-name">
-                                Tôi là sinh viên tiêu biểu trong học tập và rèn luyện, được giới thiệu tham gia học lớp
-                                cảm
-                                tình Đảng hoặc xét kết nạp Đảng
-                            </p>
-                        </div>
-                        <div class="option">
-                            <p class="option-name">
-                                Tôi không tham gia
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between navigate">
-                        <div class="d-flex align-items-center page">
-                            <p class="page-index">Trang 17</p>
-                        </div>
-                        <div class="navigate-btn">
-
-                            <button class="btn btn-lg btn-primary border-4" style="margin-left: 5px;"
-                                onclick="openSuccessNotification()">
-                                Cập nhật
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- END MAIN ELEMENT -->
 
 

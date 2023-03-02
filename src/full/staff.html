@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="smart-style-2">
+<body class="">
     <header id="header">
         <div id="logo-group">
             <p id="logo"> <img src="img/logo.png" alt="SmartAdmin"> </p>
@@ -100,33 +100,31 @@
     </header>
 
     <aside id="left-panel">
-        <div class="login-info">
-            <p> <!-- User image size is adjusted inside CSS, it should stay as it -->
-                <a href="#" id="show-shortcut" data-action="toggleShortcut">
-                    <img src="img/avatars/sunny.png" alt="me" class="online" />
-                    <i class="fa fa-angle-down"></i>
-                </a>
-            </p>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="d-flex" style="margin-bottom: -20px">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent">Đánh giá rèn luyện</p>
-                    </a>
-                    <a href="staff.html" class="d-flex" style="margin-bottom: -20px">
-                        <i class="fa fa-lg fa-fw fa-list-alt"></i>
-                        <p class="menu-item-parent">Ban cán sự</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <p class="minifyme" data-action="minifyMenu">
-            <i class="fa fa-arrow-circle-left hit"></i>
-        </p>
+		<nav>
+			<ul class="navigator-left-panel">
+				<a href="index.html" class="d-flex flex-row navigator-left-panel-a">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+						fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+						<path
+							d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+					</svg>
+					<p>Đánh giá rèn luyện</p>
+				</a>
+				<a href="staff.html" class="d-flex flex-row navigator-left-panel-a">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-top: 10px"
+						fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+						<path
+							d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+					</svg>
+					<p class="menu-item-parent">Ban cán sự</p>
+				</a>
+			</ul>
+		</nav>
+		<p class="minifyme" data-action="minifyMenu">
+			<i class="fa fa-arrow-circle-left hit"></i>
+		</p>
 
-    </aside>
+	</aside>    
 
 
     <!-- MAIN ELEMENT -->
