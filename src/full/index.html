@@ -232,11 +232,13 @@
 								<p class="option-name">
 									Tôi học đầy đủ và có đi trễ
 								</p>
+								
 							</div>
 							<div class="option">
 								<p class="option-name">
 									Tôi đi học không đầy đủ
 								</p>
+								
 							</div>
 
 						</div>
@@ -269,7 +271,7 @@
 
 					</div>
 					<div class="">
-						<p class="page-index">Trang 1</p>
+						<p class="page-index">Trang 1/2</p>
 					</div>
 				</div>
 
@@ -279,6 +281,7 @@
 						<img alt="right-side-image"
 							src="https://popupsmart.com/blog/images/i/l/l/u/s/illustration-of-a-male-designing-9a1907db.jpg">
 					</div>
+
 				</div>
 				<div class="exit-icon d-flex flex-row-reverse">
 					<img onclick="location.replace('./history.html')" style="position: absolute" src="./x-ion.png"
@@ -324,7 +327,7 @@
 						</div>
 						<div class="option-custom">
 							<div class="option checked-style d-flex flex-row justify-content-between"
-								onclick="handleCheckboxClick()">
+								onclick="openFileDialog()">
 								<p class="option-name">
 									Tôi là thành viên, thường xuyên tham gia sinh hoạt các CLB học thuật cấp Khoa/ Viện
 									trở lên (Đã tải minh chứng)
@@ -359,9 +362,8 @@
 						<div class="d-flex flex-row-reverse navigate">
 
 							<div class="navigate-btn">
-								<button 
-								
-								class="btn btn-lg btn-secondary border-4" style="margin-right: 8px;" onclick="jumbToServeyIndex('2','1')">
+								<button class="btn btn-lg btn-secondary border-4" style="margin-right: 8px;"
+									onclick="jumbToServeyIndex('2','1')">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
 										style="margin-left: -8px;" fill="currentColor" class="bi bi-chevron-left"
 										viewBox="0 0 16 16">
@@ -370,25 +372,27 @@
 									</svg>
 									Quay lại
 								</button>
-								<button class="btn btn-lg btn-primary border-4" style="margin-right:-10px" onclick="location.replace('history.html')">
+								<button class="btn btn-lg btn-primary border-4" style="margin-right:-10px"
+									onclick="location.replace('history.html')">
 									Hoàn Thành
-									
+
 								</button>
 							</div>
 						</div>
 
 					</div>
 					<div class="">
-						<p class="page-index">Trang 2</p>
+						<p class="page-index">Trang 2/2</p>
 					</div>
 				</div>
 
 				<div class="proof d-flex flex-column">
 
 					<div class="img">
-						<img alt="right-side-image"
-							id="certificate-image"
+						<img alt="right-side-image" id="certificate-image"
 							src="https://marketplace.canva.com/EAFJXTjgz1M/1/0/1600w/canva-blue-and-yellow-minimalist-employee-of-the-month-certificate-_A_NvKtzEzc.jpg">
+							<label for="formFile" class="form-label"></label>
+							<input class="form-control" style="padding-bottom: 10px;" type="file" id="formFile">
 					</div>
 				</div>
 				<div class="exit-icon d-flex flex-row-reverse">
